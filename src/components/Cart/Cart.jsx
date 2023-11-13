@@ -6,7 +6,6 @@ export const Cart = () => {
     return (
 
             <img className={styles.imageCart} src= {cartpicture} />
-
     
     )
 }

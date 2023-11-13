@@ -1,6 +1,7 @@
 import { Cart } from "../Cart/Cart"
 import { HookUseState } from "../HookUseState/HookUseState"
 import styles from "./navbar.module.css"
+import { Link } from "react-router-dom"
 
 
 export const NavBar = () => {
@@ -8,14 +9,13 @@ export const NavBar = () => {
         <>
         <nav className={styles.navBar}>
             <div>
-                <a href="">Inicio</a>
-                <a href="">Terror</a>
-                <a href="">Comedia</a>
-                <a href="">Romantico</a>
-                <a href="">Acción</a>
+
+                <a href="/">Inicio</a>
             </div>
             <div>
+                <a href="/Cart">
                 <Cart className="cartNav"/>
+                </a>
             </div>
             <div>
                 <HookUseState/>
