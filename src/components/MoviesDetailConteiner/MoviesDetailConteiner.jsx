@@ -3,6 +3,7 @@ import { getProductById } from "../../asyncmock";
 import { useEffect } from "react";
 import { MovieDetail } from "../MovieDetail/MovieDetail";
 import { useParams } from "react-router-dom";
+import styles from "./moviesdetailconteiner.module.css"
 
 export const MoviesDetailConteiner = () => {
 
@@ -28,7 +29,7 @@ export const MoviesDetailConteiner = () => {
 
 return(
 
-    <div className="container inline justify-content-center mt-5">
+    <div className={styles.cuadro}>
 
 
     {

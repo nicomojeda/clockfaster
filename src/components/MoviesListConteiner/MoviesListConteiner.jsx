@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../../asyncmock";
-import { HijoItem } from "../HijoItem/HijoItem";
+import { MovieList } from "../MovieList/MovieList";
+import styles from "./movieslistconteiner.module.css"
 
 export const MoviesListConteiner = () => {
 
@@ -25,7 +26,7 @@ export const MoviesListConteiner = () => {
 
     return(
         <>
-        <div className="container text-center flex-auto inline-block">
+        <div className={styles.cuadro}>
 
 
                 {
@@ -37,7 +38,7 @@ export const MoviesListConteiner = () => {
                      :
 
                     
-                    products.map( product => <HijoItem key={product.id} {...product}/>)
+                    products.map( product => <MovieList key={product.id} {...product}/>)
 
                 }
 

@@ -3,10 +3,12 @@
 }
 
 .navBar{
-    background-color: lightblue;
+    background-color: black;
+    background-repeat: repeat-x;
     width: 100%;
     align-items: left;
-    display: flex;
+    color: white;
+    display: inline;
 
 }
 
@@ -15,12 +17,11 @@ a{
     margin-right: 5px;
     margin-left: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
     width: 100px;
 }
 
-.cartNav{
-
-    margin-left: 50px;
-    
+.imageCart{
+    width: 70px;
+    height: 70px;
 }

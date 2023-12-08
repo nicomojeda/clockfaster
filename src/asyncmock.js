@@ -9,11 +9,11 @@ import terminatorpicture from '../terminator.webp'
 const products = [
 
     {id: "1", name: "Chucky", gender: "Terror", duration: "120 min", picture:`${chuckypicture}`, price:"$100"},
-    {id: "2", name: "Posdata: Te amo", gender: "Romantico", duration: "120 min", picture:`${pdteamopicture}`},
+    {id: "2", name: "Posdata: Te amo", gender: "Romantico", duration: "120 min", picture:`${pdteamopicture}`, price: "$120"},
     {id: "3", name: "Los juegos del hambre", gender: "Ciencia Ficcion", duration: "240 min", picture:`${hungrygamespicture}`, price:"$100"},
     {id: "4", name: "Un papa genial", gender: "Comedia", duration: "120 min", picture:`${unpapagenialpicture}`, price:"$100"},
     {id: "5", name: "Mision Imposible", gender: "Accion", duration: "120 min", picture:`${misionimposiblepicture}`, price:"$100"},
-    {id: "6", name: "Martes 13", gender: "Terror", duration: "120 min", picture:`${friday13picture}`, precio:"$100"},
+    {id: "6", name: "Martes 13", gender: "Terror", duration: "120 min", picture:`${friday13picture}`, price:"$100"},
     {id: "7", name: "Terminator", gender: "Ciencia Ficcion", duration: "120 min", picture:`${terminatorpicture}`, price:"$100"},
 
 ];
@@ -71,17 +71,16 @@ export const getProductById = (id) => {
 
 export const getProductByGender = (gender) => {
 
-    let movie = products.find( (movies) => movies.gender == gender);
+    const movies = products.filter ( movie => movie.gender == gender);
 
 
-    console.log(movie)
 
 
     return new Promise ( (resolve, reject)=>{
 
 
 
-    if(movie == undefined) {
+    if(movies == undefined) {
       
         reject("Info doesn't exist")
     }
@@ -90,7 +89,7 @@ export const getProductByGender = (gender) => {
      
 
         setTimeout( () =>{
-            resolve(movie)
+            resolve(movies)
         },3000)
         }
 

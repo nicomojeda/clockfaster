@@ -1,0 +1,37 @@
+.title{
+    align-items: left;
+    
+    display: flex;
+
+    width: 100%;
+
+
+
+
+    background-color: black;
+
+
+}
+
+.pictureTitle{
+
+    width: 150px;
+    height: 150px;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 50px;
+    padding-left: 10px;
+    color: white;
+    font-size: 50px;
+}
+
+
+.cartStyles{
+
+    margin-top: 200px;
+    margin-left: 300px;
+    
+}
+
